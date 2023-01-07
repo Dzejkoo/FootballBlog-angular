@@ -1,0 +1,40 @@
+.header {
+  width: 100%;
+  max-width: 1500px;
+
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 auto;
+  &__main {
+    padding: 30px 0;
+  }
+  &__brand {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    &-img {
+      width: 150px;
+    }
+  }
+
+  &__nav {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__list {
+    display: flex;
+    padding-left: 0;
+  }
+
+  &__item {
+    list-style: none;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: var(--clr-text);
+  }
+}
