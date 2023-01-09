@@ -8,14 +8,14 @@ import { Team } from './model.player';
   styleUrls: ['./team.component.scss'],
 })
 export class TeamComponent implements OnInit {
-  player: Team = [];
+  players: Team[] = [];
   constructor(private playersService: PlayersService) {}
 
   ngOnInit() {
     this.playersService.getPlayers().subscribe((data) => {
-      this.player = data;
+      this.players = data;
     });
 
-    console.log(this.player);
+    console.log(this.players);
   }
 }
